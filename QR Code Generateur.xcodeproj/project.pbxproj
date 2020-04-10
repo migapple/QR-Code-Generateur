@@ -14,6 +14,8 @@
 		53EFD2B824403A620049A303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EFD2B724403A620049A303 /* Assets.xcassets */; };
 		53EFD2BB24403A620049A303 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53EFD2BA24403A620049A303 /* Preview Assets.xcassets */; };
 		53EFD2BE24403A620049A303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53EFD2BC24403A620049A303 /* LaunchScreen.storyboard */; };
+		53EFD2C72440C7BB0049A303 /* QRCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFD2C62440C7BB0049A303 /* QRCodeView.swift */; };
+		53EFD2C92440D1C40049A303 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFD2C82440D1C40049A303 /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		53EFD2BA24403A620049A303 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		53EFD2BD24403A620049A303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53EFD2BF24403A620049A303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53EFD2C5244078A20049A303 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		53EFD2C62440C7BB0049A303 /* QRCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeView.swift; sourceTree = "<group>"; };
+		53EFD2C82440D1C40049A303 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +66,8 @@
 				53EFD2AE24403A610049A303 /* AppDelegate.swift */,
 				53EFD2B024403A610049A303 /* SceneDelegate.swift */,
 				53EFD2B524403A610049A303 /* ContentView.swift */,
+				53EFD2C82440D1C40049A303 /* Data.swift */,
+				53EFD2C62440C7BB0049A303 /* QRCodeView.swift */,
 				53EFD2B724403A620049A303 /* Assets.xcassets */,
 				53EFD2BC24403A620049A303 /* LaunchScreen.storyboard */,
 				53EFD2BF24403A620049A303 /* Info.plist */,
@@ -120,6 +127,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 53EFD2A224403A610049A303;
 			productRefGroup = 53EFD2AC24403A610049A303 /* Products */;
@@ -150,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EFD2AF24403A610049A303 /* AppDelegate.swift in Sources */,
+				53EFD2C92440D1C40049A303 /* Data.swift in Sources */,
 				53EFD2B124403A610049A303 /* SceneDelegate.swift in Sources */,
+				53EFD2C72440C7BB0049A303 /* QRCodeView.swift in Sources */,
 				53EFD2B624403A610049A303 /* ContentView.swift in Sources */,
 				53EFD2B424403A610049A303 /* QR_Code_Generateur.xcdatamodeld in Sources */,
 			);
@@ -163,6 +173,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				53EFD2BD24403A620049A303 /* Base */,
+				53EFD2C5244078A20049A303 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -174,6 +185,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -234,6 +246,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
