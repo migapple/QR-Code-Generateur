@@ -14,12 +14,14 @@ struct QRCodeView: View {
     
     var body: some View {
         VStack {
-        Text("\(editTexte(motif: motifs[choixMotif], dateEdition: dateEdition))")
+            
+//        Text("\(editTexte(motif: motifs[choixMotif], dateEdition: dateEdition))")
         
             Image(uiImage: UIImage(data: returnData(str: editTexte(motif: motifs[choixMotif], dateEdition: dateEdition)))!)
                             .resizable()
                             .frame(width: 300, height: 300)
         }
+    .navigationBarBackButtonHidden(true)
     }
     
     func returnData(str: String) -> Data {
@@ -32,11 +34,8 @@ struct QRCodeView: View {
     }
 }
 
-//struct QRCodeView_Previews: PreviewProvider {
-//    @Binding var choixMotif: Int
-//    @Binding var dateEdition: Date
-//    
-//    static var previews: some View {
-//        QRCodeView(choixMotif: <#T##Binding<Int>#>, dateEdition: <#T##Binding<Date>#>)
-//    }
-//}
+struct QRCodeView_Previews: PreviewProvider {
+    static var previews: some View {
+        QRCodeView(choixMotif: .constant(0), dateEdition: .constant(Date()))
+    }
+}
