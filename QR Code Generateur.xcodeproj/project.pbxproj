@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5330C07D24421E6D006A0D26 /* IdentiteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5330C07C24421E6D006A0D26 /* IdentiteView.swift */; };
+		53506A7D2444AD4100EE3618 /* Attestation.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 53506A7C2444AD4100EE3618 /* Attestation.pdf */; };
 		5380FE6024435A9600CBE27F /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380FE5F24435A9600CBE27F /* TabBarView.swift */; };
 		5380FE6224435F4400CBE27F /* MotifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5380FE6124435F4400CBE27F /* MotifView.swift */; };
+		53E2863E2444437700A866B5 /* AttestationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E2863D2444437700A866B5 /* AttestationView.swift */; };
 		53EFD2AF24403A610049A303 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFD2AE24403A610049A303 /* AppDelegate.swift */; };
 		53EFD2B124403A610049A303 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53EFD2B024403A610049A303 /* SceneDelegate.swift */; };
 		53EFD2B424403A610049A303 /* QR_Code_Generateur.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53EFD2B224403A610049A303 /* QR_Code_Generateur.xcdatamodeld */; };
@@ -22,8 +24,10 @@
 
 /* Begin PBXFileReference section */
 		5330C07C24421E6D006A0D26 /* IdentiteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentiteView.swift; sourceTree = "<group>"; };
+		53506A7C2444AD4100EE3618 /* Attestation.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Attestation.pdf; sourceTree = "<group>"; };
 		5380FE5F24435A9600CBE27F /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		5380FE6124435F4400CBE27F /* MotifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotifView.swift; sourceTree = "<group>"; };
+		53E2863D2444437700A866B5 /* AttestationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestationView.swift; sourceTree = "<group>"; };
 		53EFD2AB24403A610049A303 /* QR Code Generateur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR Code Generateur.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53EFD2AE24403A610049A303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53EFD2B024403A610049A303 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +71,12 @@
 		53EFD2AD24403A610049A303 /* QR Code Generateur */ = {
 			isa = PBXGroup;
 			children = (
+				53506A7C2444AD4100EE3618 /* Attestation.pdf */,
 				53EFD2AE24403A610049A303 /* AppDelegate.swift */,
 				53EFD2B024403A610049A303 /* SceneDelegate.swift */,
-				5380FE6124435F4400CBE27F /* MotifView.swift */,
 				5380FE5F24435A9600CBE27F /* TabBarView.swift */,
+				5380FE6124435F4400CBE27F /* MotifView.swift */,
+				53E2863D2444437700A866B5 /* AttestationView.swift */,
 				53EFD2C82440D1C40049A303 /* Data.swift */,
 				5330C07C24421E6D006A0D26 /* IdentiteView.swift */,
 				53EFD2C62440C7BB0049A303 /* QRCodeView.swift */,
@@ -153,6 +159,7 @@
 				53EFD2BE24403A620049A303 /* LaunchScreen.storyboard in Resources */,
 				53EFD2BB24403A620049A303 /* Preview Assets.xcassets in Resources */,
 				53EFD2B824403A620049A303 /* Assets.xcassets in Resources */,
+				53506A7D2444AD4100EE3618 /* Attestation.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +177,7 @@
 				53EFD2C72440C7BB0049A303 /* QRCodeView.swift in Sources */,
 				5380FE6224435F4400CBE27F /* MotifView.swift in Sources */,
 				5330C07D24421E6D006A0D26 /* IdentiteView.swift in Sources */,
+				53E2863E2444437700A866B5 /* AttestationView.swift in Sources */,
 				53EFD2B424403A610049A303 /* QR_Code_Generateur.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
