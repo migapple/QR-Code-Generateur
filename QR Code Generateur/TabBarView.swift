@@ -17,13 +17,19 @@ struct TabBarView: View {
     var body: some View {
         VStack {
             Text("COVID-19")
-            Text("QRCode de déplacement")
-            Text("Non validé par le gouvernement")
+//            Text("QRCode de déplacement")
+//            Text("Non validé par le gouvernement")
             TabView {
                 MotifView(choixMotif: $choixMotif, dateEdition: $dateEdition)
                     .tabItem {
                         Image(systemName: "calendar")
                         Text("Motif")
+                }
+                
+                AttestationView(choixMotif: $choixMotif, dateEdition: $dateEdition)
+                    .tabItem {
+                        Image(systemName: "doc.text")
+                        Text("PDF")
                 }
                 
                 QRCodeView(choixMotif: $choixMotif, dateEdition: $dateEdition)

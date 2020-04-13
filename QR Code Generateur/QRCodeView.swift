@@ -37,7 +37,7 @@ struct QRCodeView: View {
         func editTexte(identite: Donnees, motif: String, dateEdition: Date) -> String {
         let texte1 = "Cree le: "
         let texte2 = texte1 + dateA(date: dateEdition)
-        let texte3 = texte2 + "; \(settings.identite.nom); Prenom: \(settings.identite.prenom); Naissance: \(settings.identite.dateDeNaissance) a \(settings.identite.ville); Adresse: \(settings.identite.adresse) \(settings.identite.departement) \(settings.identite.ville); Sortie: "
+            let texte3 = texte2 + "; Nom: \(settings.identite.nom); Prenom: \(settings.identite.prenom); Naissance: \(settings.identite.dateDeNaissance) a \(settings.identite.lieuDeNaissance); Adresse: \(settings.identite.adresse) \(settings.identite.departement) \(settings.identite.ville); Sortie: "
         let texte4 = texte3 + dateA(date: dateEdition)
         let texte5 = texte4 + "; Motifs: "
         let texte6 = texte5 + motif

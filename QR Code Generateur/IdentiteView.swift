@@ -14,8 +14,8 @@ struct IdentiteView: View {
     var body: some View {
         
         VStack {
-            NavigationView {
-                Form {
+//            NavigationView {
+//                Form {
                     TextField("Nom", text: $settings.identite.nom)
                     TextField("Prenom", text: $settings.identite.prenom)
                     TextField("Date de Naissance", text: $settings.identite.dateDeNaissance)
@@ -42,9 +42,10 @@ struct IdentiteView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                     }
-                }
-                .navigationBarTitle("Identite")
-            }
+//                }
+//                .navigationBarTitle("Identite")
+//            }
+            Spacer()
         }
     }
 }
