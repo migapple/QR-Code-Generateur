@@ -12,16 +12,17 @@ struct QRCodeView: View {
     @Binding var choixMotif: Int
     @Binding var dateEdition: Date
     
+    @EnvironmentObject var settings: Donnees
+    
     var body: some View {
         VStack {
             
-//        Text("\(editTexte(motif: motifs[choixMotif], dateEdition: dateEdition))")
+//            Text("\(editTexte(identite: settings, motif: motifs[choixMotif], dateEdition: dateEdition))")
         
-            Image(uiImage: UIImage(data: returnData(str: editTexte(motif: motifs[choixMotif], dateEdition: dateEdition)))!)
+            Image(uiImage: UIImage(data: returnData(str: editTexte(identite: settings, motif: motifs[choixMotif], dateEdition: dateEdition)))!)
                             .resizable()
                             .frame(width: 300, height: 300)
         }
-    .navigationBarBackButtonHidden(true)
     }
     
     func returnData(str: String) -> Data {
@@ -32,6 +33,17 @@ struct QRCodeView: View {
         let uiimage = UIImage(ciImage: image!)
         return uiimage.pngData()!
     }
+    
+        func editTexte(identite: Donnees, motif: String, dateEdition: Date) -> String {
+        let texte1 = "Cree le: "
+        let texte2 = texte1 + dateA(date: dateEdition)
+        let texte3 = texte2 + "; \(settings.identite.nom); Prenom: \(settings.identite.prenom); Naissance: \(settings.identite.dateDeNaissance) a \(settings.identite.ville); Adresse: \(settings.identite.adresse) \(settings.identite.departement) \(settings.identite.ville); Sortie: "
+        let texte4 = texte3 + dateA(date: dateEdition)
+        let texte5 = texte4 + "; Motifs: "
+        let texte6 = texte5 + motif
+        return texte6
+    }
+
 }
 
 struct QRCodeView_Previews: PreviewProvider {
